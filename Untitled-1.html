@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+   function getvalues(){
+
+    var name=document.getElementById('name1').value;        
+    var last=document.getElementById('lastname').value;
+    var em=document.getElementById('email').value;
+    var ac=document.getElementById('academic').value;
+    var dat=document.getElementById('date').value;
+    var cont=document.getElementById('contact').value;
+    var langu=document.getElementById('lang').value;
+    var pic=document.getElementById('photo').value;
+
+  
+    var user={
+        name:name,
+        last:last,
+        em:em,
+        ac:ac,
+        dat:dat,
+        cont:cont,
+        langu:langu,
+        pic:pic,
+    }
+    localStorage.setItem('user',JSON.stringify(user));
+  console.log(user)
+   }
+ 
+   
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Sign In</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+   
+        <div class="content">
+            <div class="forms">
+                <div class="sign in">
+                    <h1 class="title">Sign In</h1>
+            <form action="card.html" id="form1" >
+                <div class="input">
+                    <input id="name1" value="click"  type="text" placeholder="Your FirstName" required>
+                </div>
+                <div class="input">
+                    <input id="lastname" type="text" placeholder="Your LastName" required>
+                </div>
+                <div class="input">
+                    <input id="email" type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input">
+                    <input type="password" placeholder="Enter your password" required>
+                </div>
+                
+                <div class="input">
+                    <input id="academic" type="text" placeholder="Your Academic level" required>
+                </div>
+
+                <div class="input">
+                    <input id="date" type="date" placeholder="Enter your password" required>
+                </div>
+
+                <div class="input">
+                    <input id="contact" type="number" placeholder="contact" required>
+                </div>
+                   <h4>Languages You speak :</h4>
+                    <input type="checkbox" id="lang" name="vehicle1" value="French">
+                         <label for="vehicle1" class="lang">French</label><br>
+                         <input type="checkbox" id="vehicle2" name="vehicle2" value="English">
+                         <label for="vehicle2" class="lang">English</label><br>
+                         <input type="checkbox" id="vehicle3" name="vehicle3" value="Spanish">
+                         <label for="vehicle3" class="lang">Spanish</label>
+                
+
+                 <div class="upload">
+                 <button type="button" class="btn-warning" id="photo">Upload Picture
+                    <span class="material-symbols-outlined">
+                        Upload
+                        </span>
+                        <input type="file" class="file1" id="picture">
+                 </button>
+                 <button type="submit" class="submt" value="click" id="btn" onclick="getvalues();">submit</button>
+                 
+
+                 </div>   
+            
+                
+            </form>
+                </div>
+            </div>
+        </div>
+    <script src="./main.js"></script>
+    
+    
+    
+</body>
+</html>

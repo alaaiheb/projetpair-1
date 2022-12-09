@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Zen+Dots&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Kdam Thmor Pro', sans-serif; ;
+}
+body{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/6693649/pexels-photo-6693649.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.content{
+    position: relative;
+    max-width: 430px;
+    width:100%;
+    background-color: aliceblue;
+    border-radius: 15px;
+    box-shadow:  0 5px 10px rgb(0,0,0,0.1);
+    
+}
+.content .forms{
+    padding:30px;
+}
+
+.content .forms .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.forms .title::before{
+ content:'';
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ height: 3px;
+ width:30px;
+ background-color:rgb(255, 125, 18 );
+ border-radius: 25px;
+}
+
+.forms .input{
+    margin-top: 30px;
+    background-color:rgb(255, 125, 18);
+    position: relative;
+    height: 50px;
+    width: 100%;
+
+}
+
+.input input {
+height:95%;
+width:100%;
+position: absolute;
+padding: 0 35px;
+border: none;
+outline: none;
+font-size: 16px;
+border-bottom: 2px solid #fff;
+border: top 2px solid transparent;
+
+}
+
+.input{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+     
+}
+
+.btn-warning{
+    position: relative;
+    padding: 11px 16px;
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: #fff;
+    background-color: rgb(255, 125, 18);
+    border: 0;
+    overflow: hidden;
+    margin-left: 80px;
+    width: 200px;
+}
+
+
+.btn-warning .file1{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(3);
+    opacity: 0;
+   
+}
+
+.submt{
+    position: relative;
+    padding: 11px 16px;
+    font-size: 22px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: #fff;
+    background-color: rgb(255, 125, 18);
+    border: 0;
+    overflow: hidden;
+    margin-left: 80px;
+    width: 200px;
+    height: 50px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+.submt:hover{
+    width: 202px;
+    height: 52px;
+}
+
+.btn-warning .file1{
+    width: 202px;
+    height: 52px;
+}
+
+
+.parag{
+    width: 120px;
+    height: 60px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+
+.lang{
+  margin-bottom: 10px;
+  margin-left: 28px;
+}
+
+
+
